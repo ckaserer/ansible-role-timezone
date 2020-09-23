@@ -5,6 +5,4 @@
       - name: "Include ansible role"
         include_role:
           name: "ansible-role-timezone"
-          apply:
-            become: true
 ...
