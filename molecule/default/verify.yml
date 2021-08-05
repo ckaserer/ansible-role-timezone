@@ -1,11 +1,11 @@
 ---
-  - name: Verify
-    hosts: all
-    tasks:
-      - name: Set timezone to Europe/Vienna
-        timezone:
-          name: Europe/Vienna
-        check_mode: yes
-        register: timezone
-        failed_when: timezone.changed
+- name: Verify
+  hosts: all
+  tasks:
+    - name: Set timezone to Europe/Vienna
+      timezone:
+        name: Europe/Vienna
+      check_mode: yes
+      register: timezone
+      failed_when: timezone.changed
 ...
